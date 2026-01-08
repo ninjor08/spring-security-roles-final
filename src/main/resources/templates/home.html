@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+<body>
+
+<h1>Bienvenido</h1>
+
+<p>Usuario autenticado: <b th:text="${usuario}"></b></p>
+
+<hr>
+
+<p>Ir a secciones:</p>
+<ul>
+  <li><a href="/admin">Admin</a></li>
+  <li><a href="/empleado">Empleado</a></li>
+  <li><a href="/cliente">Cliente</a></li>
+</ul>
+
+<form th:action="@{/logout}" method="post">
+  <button type="submit">Cerrar sesión</button>
+</form>
+
+</body>
+</html>
+
